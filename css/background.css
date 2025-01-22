@@ -1,0 +1,6 @@
+.gradio-container {
+    background-image: url('http://localhost:8000/static/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
