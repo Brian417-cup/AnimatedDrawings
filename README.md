@@ -18,6 +18,18 @@ The Python version is 3.10.13. And you can install other packages use below comm
 pip install -r requirements.txt
 ```
 
+
+
+## Start Server
+
+Run following command:
+
+```
+python main_page.py
+```
+
+
+
 ## Operation Steps
 
 1. Upload image.
