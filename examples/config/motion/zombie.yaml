@@ -1,0 +1,30 @@
+filepath: examples/bvh/fair1/zombie.bvh
+start_frame_idx: 0
+end_frame_idx: 779
+# adjust bvh skeleton y pos by getting groundplane joint...
+#groundplane_joint = self.bvh.root_joint.get_transform_by_name(motion_cfg.groundplane_joint)
+# ... and moving the bvh so it is on the y=0 plane
+groundplane_joint: LeftFoot
+# bvh joints defining a set of vectors that skeleton's fwd is perpendicular to
+#        self.forward_perp_vector_joint_names: List[Tuple[str, str]] = motion_cfg.forward_perp_joint_vectors
+ # rotate BVH skeleton so forward is +X
+#        skeleton_fwd: Vectors = self.bvh.get_skeleton_fwd(self.forward_perp_vector_joint_names)
+#        q: Quaternions = Quaternions.rotate_between_vectors(skeleton_fwd, Vectors([1.0, 0.0, 0.0]))
+#        self.bvh.rotation_offset(q)
+#......
+#    def _compute_normalized_joint_positions_and_fwd_vectors(self) -> None:
+#        """
+#        Called during initialization.
+#        Computes fwd vector for bvh skeleton at each frame.
+#        Extracts all bvh skeleton joint locations for all frames.
+#        Repositions them so root is above the origin.
+#        Rotates them so skeleton faces along the +X axis.
+#        """
+#        # get joint positions and forward vectors
+forward_perp_joint_vectors:
+  - - LeftShoulder
+    - RightShoulder
+  - - LeftUpLeg
+    - RightUpLeg
+scale: 0.025
+up: +z

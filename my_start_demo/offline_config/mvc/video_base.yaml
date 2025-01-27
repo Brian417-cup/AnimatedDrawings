@@ -1,0 +1,28 @@
+# This file is extended by "animated_drawings/mvc_base_cfg.yaml"
+scene:
+  ANIMATED_CHARACTERS:
+    - character_cfg: offline_config/character/character_base.yaml
+      motion_cfg: offline_config/motion/h36m_bvh_base.yaml
+      retarget_cfg: offline_config/retarget/h36m_retarget_base.yaml
+
+#view:
+#  CAMERA_POS: [ 0.0, 0.0, 8.0 ]
+#  CAMERA_FWD: [ 0.0, 0.5, 8.0 ]
+
+controller:
+  MODE: video_render
+  OUTPUT_VIDEO_PATH: ./video.mp4
+  OUTPUT_VIDEO_CODEC: avc1
+
+sketch:
+  image_path: input/texture.png #null
+  model:
+    detector_path: ../deployment/detection/deployment/output/sketch_detector.onnx #null
+    estimator_path: ../deployment/keypoint_estimation/deployment/output/sketch_estimator.onnx #null
+    mor_ite: 5 # Iteration for dialation and close operation when acquire mask
+    show_intermidate_result: False #False
+
+motion:
+  input_file_path: offline_config/bvh/clapping_hand_smartbody.bvh #null
+  pose3d:
+    cfg: pose3d/cfg/pose_config_with_bvh.yaml

@@ -1,0 +1,12 @@
+{
+  "createdOn": "10/01/2023 21:02:01",
+  "runtime": "python",
+  "model": {
+    "modelName": "drawn_humanoid_detector",
+    "serializedFile": "latest.pth",
+    "handler": "mmdet_handler.py",
+    "modelFile": "config.py",
+    "modelVersion": "1.0"
+  },
+  "archiverVersion": "0.7.0"
+}

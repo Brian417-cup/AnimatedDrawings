@@ -1,0 +1,12 @@
+{
+  "createdOn": "11/01/2023 12:11:31",
+  "runtime": "python",
+  "model": {
+    "modelName": "drawn_humanoid_pose_estimator",
+    "serializedFile": "best_AP_epoch_72.pth",
+    "handler": "mmpose_handler.py",
+    "modelFile": "config.py",
+    "modelVersion": "1.0"
+  },
+  "archiverVersion": "0.7.0"
+}

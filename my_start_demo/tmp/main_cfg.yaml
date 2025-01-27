@@ -1,0 +1,21 @@
+controller:
+  MODE: video_render
+  OUTPUT_VIDEO_CODEC: avc1
+  OUTPUT_VIDEO_PATH: ./video.mp4
+motion:
+  input_file_path: E:\sketch_topic\AnimatedDrawings\my_start_demo\output_3dhpe_bvh\jump_up_down_smartbody.bvh
+  pose3d:
+    cfg: pose3d/cfg/pose_config_with_bvh.yaml
+name: video_base
+scene:
+  ANIMATED_CHARACTERS:
+  - character_cfg: tmp\input\char1\char_cfg.yaml
+    motion_cfg: tmp\motion_cfg.yaml
+    retarget_cfg: tmp\retarget_cfg.yaml
+sketch:
+  image_path: input/char1.png
+  model:
+    detector_path: ../deployment/detection/deployment/output/sketch_detector.onnx
+    estimator_path: ../deployment/keypoint_estimation/deployment/output/sketch_estimator.onnx
+    mor_ite: 5
+    show_intermidate_result: false

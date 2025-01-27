@@ -1,0 +1,12 @@
+end_frame_idx: 310
+filepath: E:\sketch_topic\AnimatedDrawings\my_start_demo\output_3dhpe_bvh\jump_up_down_smartbody.bvh
+forward_perp_joint_vectors:
+- - LeftArm
+  - RightArm
+- - LeftUpLeg
+  - RightUpLeg
+groundplane_joint: LeftFoot
+name: h36m_bvh_base
+scale: 0.1
+start_frame_idx: 0
+up: +y
